@@ -2,21 +2,21 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.aichat.saveMgs.dao.SaveMgsDao">
+<mapper namespace="com.aichat.saveMsg.dao.SaveMsgDao">
 
-    <insert id="insertSaveMgs" parameterType="com.aichat.saveMgs.entity.SaveMgsEntity">
+    <insert id="insertSaveMsg" parameterType="com.aichat.saveMsg.entity.SaveMsgEntity">
         insert into ai_message_file (id,fnd_id,uuid,user_id,creation_date,file_location) values (#{id},#{fnd_id},#{uuid},#{user_id},#{creation_date},#{file_location})
     </insert>
 
-    <delete id="deleteSaveMgs">
+    <delete id="deleteSaveMsg">
         delete from ai_message_file where id = #{id}
     </delete>
 
-    <update id="updateSaveMgs" parameterType="com.aichat.saveMgs.entity.SaveMgsEntity">
+    <update id="updateSaveMsg" parameterType="com.aichat.saveMsg.entity.SaveMsgEntity">
         update ai_message_file set fnd_id=#{fnd_id},uuid=#{uuid},user_id=#{user_id},creation_date=#{creation_date},file_location=#{file_location} where id=#{id}
     </update>
 
-    <select id="getSaveMgs" resultType="com.aichat.saveMgs.entity.SaveMgsEntity">
+    <select id="getSaveMsg" resultType="com.aichat.saveMsg.entity.SaveMsgEntity">
         select * from ai_message_file where id = #{id}
     </select>
 
