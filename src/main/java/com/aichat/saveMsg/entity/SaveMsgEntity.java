@@ -1,4 +1,4 @@
-package com.aichat.saveMgs.entity;
+package com.aichat.saveMsg.entity;
 
 /**
  * Created by cyl on 2018/5/28.
@@ -8,12 +8,12 @@ package com.aichat.saveMgs.entity;
 import java.util.Date;
 
 /**
-* Table: ai_message_file
-* Table: ai_message_file
-* @author chaoyalong
-* @date 2018-5-28 16:15
-*/
-public class SaveMgsEntity {
+ * Table: ai_message_file
+ * Table: ai_message_file
+ * @author chaoyalong
+ * @date 2018-5-28 16:15
+ */
+public class SaveMsgEntity {
     private float id;
     private float fnd_id;
     private String uuid;
